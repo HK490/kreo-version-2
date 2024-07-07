@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.headerStyle {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  line-height: auto;
+  background-color: #ffffff;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.contentStyle {
+  position: relative;
+  text-align: center;
+  line-height: auto;
+  height: 100%;
+}
+
+.footerStyle {
+  position: sticky;
+  color: #000000;
+  background-color: #ffffff;
+  bottom: 0;
+  width: 100vw;
+}
+
+.layoutStyle {
+  border-radius: 8;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.homeContent {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./components/images/banner-image.jpg) no-repeat 0 0 / cover;
+  margin: 0;
+  height: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutContent {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./components/images/banner-image.jpg) no-repeat 0 0 / cover;
+  margin: 0;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .homeContent::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+} */
+
+.homeText {
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  max-width: 70vw;
+  padding: 50px 0;
+  z-index: 20;
+}
+
+.contentTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0px 150px;
+  color: #ffffff;
+  text-align: center;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.contentSpace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 50vh;
+  margin: 50px 150px;
+}
+
+.contactIcon {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #ba0c2f;
+}
+
+.contactIcon:hover {
+  background-color: #ffffff !important;
+  color: #002f5b !important;
+}
+
+.phoneMailIcon {
+  font-size: 40px;
+}
+
+.card {
+  width: 250px;
+}
+
+.cardMeta {
+  height: 55px;
+  text-align: center;
+}
+
+.contentColumn {
+  padding: 20px;
+}
+
+.rowColor {
+  background-color: #f8f9fa;
+}
+
+.footerMenuLinks a {
+  margin: 10px 0;
+  color: #002f5b !important;
+}
+
+.footerMenuLinks a:hover {
+  margin: 10px 0;
+  color: #ba0c2f !important;
+}
+
+.footerStyle a {
+  color: #002f5b !important;
+}
+
+.footerStyle a:hover {
+  color: #ba0c2f !important;
+}

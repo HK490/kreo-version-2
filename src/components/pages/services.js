@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import "../../App.css";
 import { Col, Row, Button, Flex, Card } from "antd";
-import { MailOutlined, PhoneFilled } from "@ant-design/icons";
+import { MailOutlined, PhoneFilled, ToolOutlined } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faScrewdriverWrench,
+  faFire,
+  faBorderAll,
+  faToolbox,
+  faBroom,
+} from "@fortawesome/free-solid-svg-icons";
 
 class Services extends Component {
   render() {
@@ -20,12 +28,15 @@ class Services extends Component {
             </Col>
             <Col span={12}>
               <Button className="contactIcon" type="primary" shape="circle">
-                <a href="tel: 111-111-1111" rel="noopener noreferrer">
+                <a href="tel: 470-585-2805" rel="noopener noreferrer">
                   <PhoneFilled className="phoneMailIcon" />
                 </a>
               </Button>
               <Button className="contactIcon" type="primary" shape="circle">
-                <a href="mailto: email@email.com" rel="noopener noreferrer">
+                <a
+                  href="mailto: info@kreobuildingsolution.com"
+                  rel="noopener noreferrer"
+                >
                   <MailOutlined className="phoneMailIcon" />
                 </a>
               </Button>
@@ -40,9 +51,10 @@ class Services extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Renovation"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faScrewdriverWrench}
+                      size="5x"
                     />
                   }
                 >
@@ -52,9 +64,10 @@ class Services extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Water / Fire / Mold"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faFire}
+                      size="5x"
                     />
                   }
                 >
@@ -64,9 +77,10 @@ class Services extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Flooring"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faBorderAll}
+                      size="5x"
                     />
                   }
                 >
@@ -76,9 +90,10 @@ class Services extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Preventive Maintenance (Flyer without price)"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faToolbox}
+                      size="5x"
                     />
                   }
                 >
@@ -92,9 +107,10 @@ class Services extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Maintenance Cleaning"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faBroom}
+                      size="5x"
                     />
                   }
                 >

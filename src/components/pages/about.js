@@ -14,12 +14,15 @@ class About extends Component {
             </Col>
             <Col span={12}>
               <Button className="contactIcon" type="primary" shape="circle">
-                <a href="tel: 111-111-1111" rel="noopener noreferrer">
+                <a href="tel: 470-585-2805" rel="noopener noreferrer">
                   <PhoneFilled className="phoneMailIcon" />
                 </a>
               </Button>
               <Button className="contactIcon" type="primary" shape="circle">
-                <a href="mailto: email@email.com" rel="noopener noreferrer">
+                <a
+                  href="mailto: info@kreobuildingsolution.com"
+                  rel="noopener noreferrer"
+                >
                   <MailOutlined className="phoneMailIcon" />
                 </a>
               </Button>

@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/home";
 import About from "./components/pages/about";
 import Services from "./components/pages/services";
@@ -19,13 +14,13 @@ import {
   FolderOpenOutlined,
   CommentOutlined,
 } from "@ant-design/icons";
-import { Flex, Layout, Menu, Col, Row, Anchor } from "antd";
+import { Flex, Layout, Menu, Col, Row } from "antd";
 import "./App.css";
 import kreoLogo from "./components/images/logo-horizontal.jpg";
-import banner from "./components/images/banner-image.jpg";
 
 class App extends Component {
   render() {
+    // document.title = "Kreo Buiilding Solution";
     const { Header, Footer, Content } = Layout;
     const items = [
       {
@@ -42,24 +37,6 @@ class App extends Component {
         label: "Services",
         key: "/services",
         icon: <ToolOutlined />,
-        children: [
-          {
-            label: "Renovation",
-            key: "/services",
-          },
-          {
-            label: "Water/Fire/Mold",
-            key: "/services",
-          },
-          {
-            label: "Preventive Maintenance (Flyer without price)",
-            key: "/services",
-          },
-          {
-            label: "Maintenance Cleaning",
-            key: "/services",
-          },
-        ],
       },
       {
         label: "Wholesales",
@@ -70,20 +47,6 @@ class App extends Component {
         label: "Portfolio",
         key: "/portfolio",
         icon: <FolderOpenOutlined />,
-        children: [
-          {
-            label: "Renovation",
-            key: "/portfolio",
-          },
-          {
-            label: "University Housing",
-            key: "/portfolio",
-          },
-          {
-            label: "Capital Work",
-            key: "/portfolio",
-          },
-        ],
       },
       {
         label: "Contact Us",
@@ -136,20 +99,28 @@ class App extends Component {
           <Footer className="footerStyle">
             <Row>
               <Col span={8}>
-                <img width="400px" src={kreoLogo} alt="kreo logo" />
+                <img width="250px" src={kreoLogo} alt="kreo logo" />
+                <p className="copyright">
+                  &copy;2019 Kreo Building Solution. ALL RIGHTS RESERVED
+                </p>
               </Col>
               <Col span={8}>
+                <p>3011 Sutton Gate Dr. suite 306 Suwanee, ga 30024</p>
                 <p>
-                  <b>Kreo</b>
-                </p>
-                <p>1111 insert address here Suwanee, Ga 30024</p>
-                <p>
-                  <a href="tel: 111-111-1111" rel="noopener noreferrer">
-                    111-111-1111
+                  <a href="tel: 470-585-2805" rel="noopener noreferrer">
+                    470-585-2805
                   </a>{" "}
                   |{" "}
-                  <a href="mailto: Email@email.com" rel="noopener noreferrer">
-                    Email@email.com
+                  <a href="tel: 470-718-0287" rel="noopener noreferrer">
+                    470-718-0287
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="mailto: info@kreobuildingsolution.com"
+                    rel="noopener noreferrer"
+                  >
+                    info@kreobuildingsolution.com
                   </a>
                 </p>
               </Col>

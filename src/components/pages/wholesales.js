@@ -2,6 +2,15 @@ import React, { Component } from "react";
 import "../../App.css";
 import { Col, Row, Button, Flex, Card } from "antd";
 import { MailOutlined, PhoneFilled } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faWind,
+  faFaucetDrip,
+  faLightbulb,
+  faBorderAll,
+  faRug,
+  faDoorClosed,
+} from "@fortawesome/free-solid-svg-icons";
 
 class Wholesales extends Component {
   render() {
@@ -20,12 +29,15 @@ class Wholesales extends Component {
             </Col>
             <Col span={12}>
               <Button className="contactIcon" type="primary" shape="circle">
-                <a href="tel: 111-111-1111" rel="noopener noreferrer">
+                <a href="tel: 470-585-2805" rel="noopener noreferrer">
                   <PhoneFilled className="phoneMailIcon" />
                 </a>
               </Button>
               <Button className="contactIcon" type="primary" shape="circle">
-                <a href="mailto: email@email.com" rel="noopener noreferrer">
+                <a
+                  href="mailto: info@kreobuildingsolution.com"
+                  rel="noopener noreferrer"
+                >
                   <MailOutlined className="phoneMailIcon" />
                 </a>
               </Button>
@@ -40,9 +52,10 @@ class Wholesales extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Countertop"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faRug}
+                      size="5x"
                     />
                   }
                 >
@@ -52,9 +65,10 @@ class Wholesales extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Cabinetry"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faDoorClosed}
+                      size="5x"
                     />
                   }
                 >
@@ -64,9 +78,10 @@ class Wholesales extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Floors"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faBorderAll}
+                      size="5x"
                     />
                   }
                 >
@@ -82,9 +97,10 @@ class Wholesales extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Drywall / Insulation"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faWind}
+                      size="5x"
                     />
                   }
                 >
@@ -94,9 +110,10 @@ class Wholesales extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="Punch Supplies or Interior Fixtures"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faLightbulb}
+                      size="5x"
                     />
                   }
                 >
@@ -110,9 +127,10 @@ class Wholesales extends Component {
                   hoverable
                   className="card"
                   cover={
-                    <img
-                      alt="HVAC / Plumbing Supplies - water heater"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    <FontAwesomeIcon
+                      className="panelIcons"
+                      icon={faFaucetDrip}
+                      size="5x"
                     />
                   }
                 >

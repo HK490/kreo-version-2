@@ -129,6 +129,7 @@ p {
 
 .card {
   width: 250px;
+  padding: 5px;
 }
 
 .cardMeta {
@@ -146,18 +147,28 @@ p {
 
 .footerMenuLinks a {
   margin: 10px 0;
-  color: #002f5b !important;
 }
 
 .footerMenuLinks a:hover {
   margin: 10px 0;
-  color: #ba0c2f !important;
 }
 
-.footerStyle a {
+a {
   color: #002f5b !important;
 }
 
-.footerStyle a:hover {
+a:hover {
   color: #ba0c2f !important;
+}
+
+button a {
+  color: #ba0c2f !important;
+}
+
+button a:hover {
+  color: #002f5b !important;
+}
+
+.panelIcons {
+  padding-top: 40px;
 }
